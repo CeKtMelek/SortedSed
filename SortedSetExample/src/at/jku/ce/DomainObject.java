@@ -2,9 +2,8 @@ package at.jku.ce;
 
 public class DomainObject {
 
-	public String id = UUID.randomUUID().toString();
+	public String uuid = UUID.randomUUID().toString();
 	private String name;	
-
 
 	/**
 	 * Default constructor
@@ -14,11 +13,11 @@ public class DomainObject {
 	}
 	public DomainObject(String id) {
 		super();
-		this.id = id;
+		this.uuid = id;
 	}
 
-	public String getId() {
-		return id;
+	public String getUuid() {
+		return uuid;
 	}
 
 }
